@@ -6,7 +6,16 @@
 import Foundation
 
 // MARK: - ProductElement
-struct Product: Codable {
+struct Product: Codable, Hashable {
+    static func == (lhs: Product, rhs: Product) -> Bool {
+        lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+
+    
     var id: Int
     var title: String
     var price: Double

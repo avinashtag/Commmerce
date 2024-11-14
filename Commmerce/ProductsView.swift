@@ -30,7 +30,28 @@ struct ProductsView: View {
     }
     
     var body: some View {
-        Text("Product, View!")
+        
+        NavigationStack {
+            List {
+                ForEach(products, id:\.self) { product in
+                    
+                    NavigationLink(product.title) {
+                        ProductDetailView()
+                    }
+                }
+            }
+            .navigationTitle("Products")
+        }
+        .task {
+            do{
+                products = try loadProducts()
+
+            }
+            catch{
+                print(error.localizedDescription)
+            }
+        }
+        
     }
 }
 
