@@ -35,8 +35,25 @@ struct ProductsView: View {
             List {
                 ForEach(products, id:\.self) { product in
                     
-                    NavigationLink(product.title) {
-                        ProductDetailView()
+                    NavigationLink(destination: ProductDetailView(product: Binding(get: {product}, set: {_ in }))) {
+                        
+                        HStack(alignment: .top, spacing: 20, content: {
+                            
+                            AsyncImage(url: URL(string: product.image)) { image in
+                                image
+                                    .resizable()
+                                    .frame(width: 100, height:  100)
+                            } placeholder: {
+                                ProgressView()
+                                    .frame(width: 100, height:  100)
+                            }
+                            VStack{
+                                Text(product.title)
+                                    .font(.title3)
+                                Text(product.description)
+                                    .font(.body)
+                            }
+                        })
                     }
                 }
             }

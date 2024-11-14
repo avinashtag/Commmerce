@@ -13,6 +13,9 @@
 		E11108982CE5D18A0022199D /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11108972CE5D18A0022199D /* ProductDetailView.swift */; };
 		E11108992CE5D18A0022199D /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11108972CE5D18A0022199D /* ProductDetailView.swift */; };
 		E111089A2CE5D18A0022199D /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11108972CE5D18A0022199D /* ProductDetailView.swift */; };
+		E111089C2CE5D5650022199D /* Simulator Screenshot - iPhone 15 Pro - 2024-11-14 at 14.51.03.png in Resources */ = {isa = PBXBuildFile; fileRef = E111089B2CE5D5650022199D /* Simulator Screenshot - iPhone 15 Pro - 2024-11-14 at 14.51.03.png */; };
+		E111089D2CE5D5650022199D /* Simulator Screenshot - iPhone 15 Pro - 2024-11-14 at 14.51.03.png in Resources */ = {isa = PBXBuildFile; fileRef = E111089B2CE5D5650022199D /* Simulator Screenshot - iPhone 15 Pro - 2024-11-14 at 14.51.03.png */; };
+		E111089E2CE5D5650022199D /* Simulator Screenshot - iPhone 15 Pro - 2024-11-14 at 14.51.03.png in Resources */ = {isa = PBXBuildFile; fileRef = E111089B2CE5D5650022199D /* Simulator Screenshot - iPhone 15 Pro - 2024-11-14 at 14.51.03.png */; };
 		E15C62ED2CE1D99200A2C89B /* CommmerceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C62EC2CE1D99200A2C89B /* CommmerceApp.swift */; };
 		E15C62EF2CE1D99200A2C89B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C62EE2CE1D99200A2C89B /* ContentView.swift */; };
 		E15C62F12CE1D99200A2C89B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C62F02CE1D99200A2C89B /* Item.swift */; };
@@ -58,6 +61,7 @@
 /* Begin PBXFileReference section */
 		E11108932CE5CFFC0022199D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E11108972CE5D18A0022199D /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		E111089B2CE5D5650022199D /* Simulator Screenshot - iPhone 15 Pro - 2024-11-14 at 14.51.03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screenshot - iPhone 15 Pro - 2024-11-14 at 14.51.03.png"; sourceTree = "<group>"; };
 		E15C62E92CE1D99200A2C89B /* Commmerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Commmerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15C62EC2CE1D99200A2C89B /* CommmerceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommmerceApp.swift; sourceTree = "<group>"; };
 		E15C62EE2CE1D99200A2C89B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 		E15C62EB2CE1D99200A2C89B /* Commmerce */ = {
 			isa = PBXGroup;
 			children = (
+				E111089B2CE5D5650022199D /* Simulator Screenshot - iPhone 15 Pro - 2024-11-14 at 14.51.03.png */,
 				E15C63242CE1DCB500A2C89B /* Products.json */,
 				E15C62EC2CE1D99200A2C89B /* CommmerceApp.swift */,
 				E15C62EE2CE1D99200A2C89B /* ContentView.swift */,
@@ -271,6 +276,7 @@
 			files = (
 				E15C62F62CE1D99400A2C89B /* Preview Assets.xcassets in Resources */,
 				E15C62F32CE1D99400A2C89B /* Assets.xcassets in Resources */,
+				E111089C2CE5D5650022199D /* Simulator Screenshot - iPhone 15 Pro - 2024-11-14 at 14.51.03.png in Resources */,
 				E15C63252CE1DCB500A2C89B /* Products.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E111089D2CE5D5650022199D /* Simulator Screenshot - iPhone 15 Pro - 2024-11-14 at 14.51.03.png in Resources */,
 				E15C63262CE1DCB500A2C89B /* Products.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E111089E2CE5D5650022199D /* Simulator Screenshot - iPhone 15 Pro - 2024-11-14 at 14.51.03.png in Resources */,
 				E15C63272CE1DCB500A2C89B /* Products.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

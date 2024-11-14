@@ -7,13 +7,17 @@
 
 import SwiftUI
 
+//Assigment 14 nov
+
 struct ProductDetailView: View {
+    @Binding var product: Product
+
     var body: some View {
-        Text("Product Detail!")
+        Text(product.description)
             .navigationTitle("Product Detail")
     }
 }
 
-#Preview {
-    ProductDetailView()
-}
+//#Preview {
+//    ProductDetailView()
+//}
