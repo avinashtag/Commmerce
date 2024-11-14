@@ -28,6 +28,15 @@ struct TabBarView: View {
                 }
             
             //TODO: Add Third Tab as Profile "person"
+            
+            CartView()
+                .tabItem {
+                    VStack(content: {
+                      
+                        Image(systemName: "person")
+                        Text("Profile")
+                    })
+                }
         }
     }
 }
