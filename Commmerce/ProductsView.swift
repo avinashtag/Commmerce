@@ -21,6 +21,8 @@ struct ProductsView: View {
     
     
     @State var products: [Product] = []
+    
+    @State var title: String = "Products"
         
     var body: some View {
         
@@ -28,7 +30,9 @@ struct ProductsView: View {
             List {
                 ForEach(products, id:\.self) { product in
                     
-                    NavigationLink(destination: ProductDetailView(product: Binding(get: {product}, set: {_ in }))) {
+                    NavigationLink(destination: ProductDetailView(product: Binding(get: {product}, set: {_ in }), didTappedOnClosure: { message in
+                        print(message)
+                    })) {
                         
                         HStack(alignment: .top, spacing: 20, content: {
                             
@@ -50,7 +54,7 @@ struct ProductsView: View {
                     }
                 }
             }
-            .navigationTitle("Products")
+            .navigationTitle(title)
         }
         .task {
             do{
