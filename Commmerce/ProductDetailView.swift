@@ -11,7 +11,8 @@ import SwiftUI
 
 struct ProductDetailView: View {
     @Binding var product: Product
-    
+    @Binding var title: String
+
     var didTappedOnClosure: (String)->Void
 
     var body: some View {
@@ -33,6 +34,7 @@ struct ProductDetailView: View {
             
             Spacer(minLength: 20)
             Button(action: {
+                title = "Hi! I tapped on closure button"
                 didTappedOnClosure("Hi! I tapped on closure button")
             }, label: {
                 Label("Closure", systemImage: "ellipsis.curlybraces")
@@ -49,6 +51,8 @@ struct ProductDetailView: View {
     
     ProductDetailView(product: Binding(get: {
         try! Product.loadProducts()[0]
+    }, set: {_ in }), title: Binding(get: {
+        ""
     }, set: {_ in }), didTappedOnClosure: { _ in
         
     })

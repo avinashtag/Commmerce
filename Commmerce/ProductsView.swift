@@ -30,7 +30,9 @@ struct ProductsView: View {
             List {
                 ForEach(products, id:\.self) { product in
                     
-                    NavigationLink(destination: ProductDetailView(product: Binding(get: {product}, set: {_ in }), didTappedOnClosure: { message in
+                    NavigationLink(destination: ProductDetailView(product: Binding(get: {product}, set: {_ in }), title: $title, didTappedOnClosure: { message in
+                       
+                        
                         print(message)
                     })) {
                         
