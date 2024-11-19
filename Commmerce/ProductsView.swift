@@ -21,14 +21,7 @@ struct ProductsView: View {
     
     
     @State var products: [Product] = []
-    
-    func loadProducts() throws -> [Product]{
         
-        guard let url =  Bundle.main.url(forResource: "Products", withExtension: "json") else { throw CommerceError.invalidURL }
-        let data = try Data(contentsOf: url)
-        return try JSONDecoder().decode([Product].self, from: data)
-    }
-    
     var body: some View {
         
         NavigationStack {
@@ -61,7 +54,7 @@ struct ProductsView: View {
         }
         .task {
             do{
-                products = try loadProducts()
+                products = try Product.loadProducts()
 
             }
             catch{

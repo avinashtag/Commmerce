@@ -23,6 +23,14 @@ struct Product: Codable, Hashable {
     var category: Category
     var image: String
     var rating: Rating
+    
+    static func loadProducts() throws -> [Product]{
+        
+        guard let url =  Bundle.main.url(forResource: "Products", withExtension: "json") else { throw CommerceError.invalidURL }
+        let data = try Data(contentsOf: url)
+        return try JSONDecoder().decode([Product].self, from: data)
+    }
+
 }
 
 enum Category: String, Codable {
