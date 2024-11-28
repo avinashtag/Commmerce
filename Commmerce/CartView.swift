@@ -11,6 +11,10 @@ struct CartView: View {
     var body: some View {
         Text("Cart, View!")
     }
+    
+    func payment() {
+        NotificationCenter.default.post(Notification(name: Notification.Name(rawValue: "PaymentSuccess")))
+    }
 }
 
 #Preview {

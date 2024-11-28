@@ -43,6 +43,14 @@ struct ProductDetailView: View {
         })
         .padding()
         .navigationTitle("Product Detail")
+        .task {
+            NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "PaymentSuccess"), object: nil, queue: nil) { notification in
+                //Here you can write the code after your notification
+                
+                
+                print("payment success")
+            }
+        }
 
     }
 }

@@ -66,6 +66,15 @@ struct ProductsView: View {
             catch{
                 print(error.localizedDescription)
             }
+            
+            NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "PaymentSuccess"), object: nil, queue: nil) { notification in
+                //Here you can write the code after your notification
+                
+                
+                print("payment success")
+            }
+
+            
         }
         
     }
@@ -74,3 +83,14 @@ struct ProductsView: View {
 #Preview {
     ProductsView()
 }
+
+
+/*Closure
+ 
+ Block of code which can be used as
+ -Parameter
+ -function
+ -callbacks
+ 
+ 
+ */
