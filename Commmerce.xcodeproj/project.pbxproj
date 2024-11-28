@@ -48,6 +48,9 @@
 		E168E9A52CF847E0003098FE /* Assignment 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E168E9A42CF847E0003098FE /* Assignment 2.png */; };
 		E168E9A62CF847E0003098FE /* Assignment 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E168E9A42CF847E0003098FE /* Assignment 2.png */; };
 		E168E9A72CF847E0003098FE /* Assignment 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E168E9A42CF847E0003098FE /* Assignment 2.png */; };
+		E168E9AA2CF8482F003098FE /* Interview.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E168E9A92CF8482F003098FE /* Interview.rtf */; };
+		E168E9AB2CF8482F003098FE /* Interview.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E168E9A92CF8482F003098FE /* Interview.rtf */; };
+		E168E9AC2CF8482F003098FE /* Interview.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E168E9A92CF8482F003098FE /* Interview.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +93,7 @@
 		E168E99B2CF8447D003098FE /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		E168E9A02CF846FE003098FE /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
 		E168E9A42CF847E0003098FE /* Assignment 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Assignment 2.png"; sourceTree = "<group>"; };
+		E168E9A92CF8482F003098FE /* Interview.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Interview.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,7 @@
 		E15C62EB2CE1D99200A2C89B /* Commmerce */ = {
 			isa = PBXGroup;
 			children = (
+				E168E9A82CF8480B003098FE /* Interview Questions */,
 				E168E99F2CF846E2003098FE /* Utility */,
 				E111089B2CE5D5650022199D /* Simulator Screenshot - iPhone 15 Pro - 2024-11-14 at 14.51.03.png */,
 				E168E9A42CF847E0003098FE /* Assignment 2.png */,
@@ -191,6 +196,14 @@
 				E168E9A02CF846FE003098FE /* Notification+Extension.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		E168E9A82CF8480B003098FE /* Interview Questions */ = {
+			isa = PBXGroup;
+			children = (
+				E168E9A92CF8482F003098FE /* Interview.rtf */,
+			);
+			path = "Interview Questions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +314,7 @@
 				E15C62F32CE1D99400A2C89B /* Assets.xcassets in Resources */,
 				E168E9A72CF847E0003098FE /* Assignment 2.png in Resources */,
 				E111089C2CE5D5650022199D /* Simulator Screenshot - iPhone 15 Pro - 2024-11-14 at 14.51.03.png in Resources */,
+				E168E9AA2CF8482F003098FE /* Interview.rtf in Resources */,
 				E15C63252CE1DCB500A2C89B /* Products.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E168E9AC2CF8482F003098FE /* Interview.rtf in Resources */,
 				E168E9A52CF847E0003098FE /* Assignment 2.png in Resources */,
 				E111089D2CE5D5650022199D /* Simulator Screenshot - iPhone 15 Pro - 2024-11-14 at 14.51.03.png in Resources */,
 				E15C63262CE1DCB500A2C89B /* Products.json in Resources */,
@@ -319,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E168E9AB2CF8482F003098FE /* Interview.rtf in Resources */,
 				E168E9A62CF847E0003098FE /* Assignment 2.png in Resources */,
 				E111089E2CE5D5650022199D /* Simulator Screenshot - iPhone 15 Pro - 2024-11-14 at 14.51.03.png in Resources */,
 				E15C63272CE1DCB500A2C89B /* Products.json in Resources */,
