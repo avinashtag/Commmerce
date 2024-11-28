@@ -67,7 +67,7 @@ struct ProductsView: View {
                 print(error.localizedDescription)
             }
             
-            NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "PaymentSuccess"), object: nil, queue: nil) { notification in
+            NotificationCenter.default.addObserver(forName: Notification.paymentSuccess, object: nil, queue: nil) { notification in
                 //Here you can write the code after your notification
                 
                 

@@ -25,7 +25,10 @@ struct CommmerceApp: App {
 
     var body: some Scene {
         WindowGroup {
-            TabBarView()
+            TabBarView().task {
+                let s = Settings.shared
+                print(s.user)
+            }
         }
         .modelContainer(sharedModelContainer)
     }

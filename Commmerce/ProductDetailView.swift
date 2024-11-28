@@ -44,7 +44,14 @@ struct ProductDetailView: View {
         .padding()
         .navigationTitle("Product Detail")
         .task {
-            NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "PaymentSuccess"), object: nil, queue: nil) { notification in
+            
+            
+            
+            let notificationOne = NotificationCenter() //New memory
+            let notificationTwo = NotificationCenter.default //  Shared Memory
+            
+            
+            NotificationCenter.default.addObserver(forName: Notification.paymentSuccess, object: nil, queue: nil) { notification in
                 //Here you can write the code after your notification
                 
                 

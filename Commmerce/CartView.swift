@@ -13,7 +13,7 @@ struct CartView: View {
     }
     
     func payment() {
-        NotificationCenter.default.post(Notification(name: Notification.Name(rawValue: "PaymentSuccess")))
+        NotificationCenter.default.post(Notification(name: Notification.paymentSuccess))
     }
 }
 
