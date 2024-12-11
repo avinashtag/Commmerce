@@ -30,6 +30,30 @@ struct Product: Codable, Hashable {
         let data = try Data(contentsOf: url)
         return try JSONDecoder().decode([Product].self, from: data)
     }
+    
+    static func loadProducts1() throws -> [Product]{
+
+        guard let url =  Bundle.main.url(forResource: "Products", withExtension: "json") else { throw CommerceError.invalidURL }
+        let data = try Data(contentsOf: url)
+        return try JSONDecoder().decode([Product].self, from: data)
+    }
+    
+    static func loadProducts2() throws -> [Product]{
+
+        guard let url =  Bundle.main.url(forResource: "Products", withExtension: "json") else { throw CommerceError.invalidURL }
+        let data = try Data(contentsOf: url)
+        return try JSONDecoder().decode([Product].self, from: data)
+    }
+
+    static func loadProducts3() throws -> [Product]{
+
+        guard let url =  Bundle.main.url(forResource: "Products", withExtension: "json") else { throw CommerceError.invalidURL }
+        let data = try Data(contentsOf: url)
+        return try JSONDecoder().decode([Product].self, from: data)
+    }
+
+
+    
 
 }
 

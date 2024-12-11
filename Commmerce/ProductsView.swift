@@ -23,6 +23,9 @@ struct ProductsView: View {
     @State var products: [Product] = []
     
     @State var title: String = "Products"
+    
+    let queue = DispatchQueue(label: "Products", attributes: .concurrent)
+    let dispactchGroup: DispatchGroup = DispatchGroup()
         
     var body: some View {
         
@@ -59,14 +62,44 @@ struct ProductsView: View {
             .navigationTitle(title)
         }
         .task {
-            do{
-                products = try Product.loadProducts()
-
+            
+            queue.async {
+                do{
+                    products = try Product.loadProducts()
+                }
+                catch{
+                    print(error.localizedDescription)
+                }
             }
-            catch{
-                print(error.localizedDescription)
+           /* dispactchGroup.enter()
+            queue.async {
+                print("API 1")
+                try? Product.loadProducts1()
+                dispactchGroup.leave()
             }
             
+            dispactchGroup.enter()
+            queue.async {
+                print("API 2")
+                try? Product.loadProducts2()
+                dispactchGroup.leave()
+            }
+            
+            dispactchGroup.enter()
+            queue.async {
+                print("API 3")
+                try? Product.loadProducts3()
+                dispactchGroup.leave()
+            }
+            
+            dispactchGroup.notify(queue: .main){
+                print("All Api Done")
+            }
+*/
+            
+            DispatchQueue.main.async {
+                //this will be in main thread 
+            }
             NotificationCenter.default.addObserver(forName: Notification.paymentSuccess, object: nil, queue: nil) { notification in
                 //Here you can write the code after your notification
                 
