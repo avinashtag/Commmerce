@@ -26,6 +26,30 @@ struct ProductsView: View {
     
     let queue = DispatchQueue(label: "Products", attributes: .concurrent)
     let dispactchGroup: DispatchGroup = DispatchGroup()
+    
+    
+    let operation1 : BlockOperation = BlockOperation {
+        print("API 1")
+        do{
+            let products = try Product.loadProducts()
+        }
+        catch{
+            print(error.localizedDescription)
+        }
+
+    }
+    
+    let operation2 : BlockOperation = BlockOperation {
+        print("API 2")
+        do{
+            let products = try Product.loadProducts()
+        }
+        catch{
+            print(error.localizedDescription)
+        }
+
+    }
+
         
     var body: some View {
         
@@ -62,6 +86,10 @@ struct ProductsView: View {
             .navigationTitle(title)
         }
         .task {
+            
+//            operation1.addDependency(operation2)
+//            operation1.start()
+//            operation2.start()
             
             queue.async {
                 do{
