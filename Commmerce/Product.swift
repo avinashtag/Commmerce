@@ -4,9 +4,11 @@
 //   let product = try? JSONDecoder().decode(Product.self, from: jsonData)
 
 import Foundation
+import SwiftData
 
 // MARK: - ProductElement
-struct Product: Codable, Hashable {
+@Model
+class Product: Codable, Hashable {
     static func == (lhs: Product, rhs: Product) -> Bool {
         lhs.id == rhs.id
     }
@@ -19,10 +21,39 @@ struct Product: Codable, Hashable {
     var id: Int
     var title: String
     var price: Double
-    var description: String
+    var desc: String
     var category: Category
     var image: String
     var rating: Rating
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case title
+        case price
+        case desc = "description"
+        case category
+        case image
+        case rating
+    }
+    
+    required init(from decoder: any Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id = try container.decode(Int.self, forKey: .id)
+        title = try container.decode(String.self, forKey: .title)
+        price = try container.decode(Double.self, forKey: .price)
+        desc = try container.decode(String.self, forKey: .desc)
+        category = try container.decode(Category.self, forKey: .category)
+        image = try container.decode(String.self, forKey: .image)
+        rating = try container.decode(Rating.self, forKey: .rating)
+    }
+
+    func encode(to encoder: any Encoder) throws {
+        //Posting api
+        var container = try encoder.container(keyedBy: CodingKeys.self)
+        try container.encodeIfPresent(self.id, forKey: .id)
+        try container.encodeIfPresent(self.price, forKey: .price)
+    }
+
     
     static func loadProducts() throws -> [Product]{
         
