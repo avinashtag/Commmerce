@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 enum CommerceError: Error{
     case invalidURL
@@ -20,8 +21,9 @@ enum CommerceError: Error{
 struct ProductsView: View {
     
     
-    @State var products: [Product] = []
-    
+    @Query var products: [Product]
+    @Environment(\.modelContext) private var modelContext
+
     @State var title: String = "Products"
     
     let queue = DispatchQueue(label: "Products", attributes: .concurrent)
@@ -76,7 +78,7 @@ struct ProductsView: View {
                             VStack{
                                 Text(product.title)
                                     .font(.title3)
-                                Text(product.description)
+                                Text(product.desc)
                                     .font(.body)
                             }
                         })
@@ -91,14 +93,30 @@ struct ProductsView: View {
 //            operation1.start()
 //            operation2.start()
             
-            queue.async {
+            if products.count == 0 {
+                //                queue.async {
                 do{
-                    products = try Product.loadProducts()
+                    
+                    let products = try await Product.loadProducts()
+                    //Insert product in db
+                    for product in products {
+                        self.modelContext.insert(product)
+                        
+                        //To Delete product
+                        // self.modelContext.delete(product)
+                        
+                        //To update
+                        //                        product.price = 20
+                        //                        try? self.modelContext.save()
+                    }
+                    
                 }
                 catch{
                     print(error.localizedDescription)
                 }
             }
+//            }
+
            /* dispactchGroup.enter()
             queue.async {
                 print("API 1")

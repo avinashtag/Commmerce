@@ -17,7 +17,7 @@ class Product: Codable, Hashable {
         hasher.combine(id)
     }
 
-    
+    @Attribute(.unique)
     var id: Int
     var title: String
     var price: Double

@@ -29,7 +29,7 @@ struct ProductDetailView: View {
             Text(product.title)
                 .font(.title2)
             
-            Text(product.description)
+            Text(product.desc)
                 .font(.body)
             
             Spacer(minLength: 20)
