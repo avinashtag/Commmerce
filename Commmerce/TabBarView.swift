@@ -36,6 +36,14 @@ struct TabBarView: View {
                         Text("Profile")
                     })
                 }
+            
+            ProductMapView()
+                .tabItem {
+                    VStack(content: {
+                        Image(systemName: "map")
+                        Text("Map")
+                    })
+                }
         }
     }
 }

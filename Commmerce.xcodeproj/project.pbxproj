@@ -51,6 +51,12 @@
 		E168E9AA2CF8482F003098FE /* Interview.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E168E9A92CF8482F003098FE /* Interview.rtf */; };
 		E168E9AB2CF8482F003098FE /* Interview.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E168E9A92CF8482F003098FE /* Interview.rtf */; };
 		E168E9AC2CF8482F003098FE /* Interview.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E168E9A92CF8482F003098FE /* Interview.rtf */; };
+		E1FDC72C2D1944DD005A99ED /* ProductMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FDC72B2D1944DD005A99ED /* ProductMapView.swift */; };
+		E1FDC72D2D1944DD005A99ED /* ProductMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FDC72B2D1944DD005A99ED /* ProductMapView.swift */; };
+		E1FDC72E2D1944DD005A99ED /* ProductMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FDC72B2D1944DD005A99ED /* ProductMapView.swift */; };
+		E1FDC7302D1948FC005A99ED /* BeantownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FDC72F2D1948FC005A99ED /* BeantownButton.swift */; };
+		E1FDC7312D1948FC005A99ED /* BeantownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FDC72F2D1948FC005A99ED /* BeantownButton.swift */; };
+		E1FDC7322D1948FC005A99ED /* BeantownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FDC72F2D1948FC005A99ED /* BeantownButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +100,8 @@
 		E168E9A02CF846FE003098FE /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
 		E168E9A42CF847E0003098FE /* Assignment 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Assignment 2.png"; sourceTree = "<group>"; };
 		E168E9A92CF8482F003098FE /* Interview.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Interview.rtf; sourceTree = "<group>"; };
+		E1FDC72B2D1944DD005A99ED /* ProductMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductMapView.swift; sourceTree = "<group>"; };
+		E1FDC72F2D1948FC005A99ED /* BeantownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeantownButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +167,8 @@
 				E15C63202CE1DBA600A2C89B /* CartView.swift */,
 				E15C63282CE1DCE700A2C89B /* Product.swift */,
 				E15C62F02CE1D99200A2C89B /* Item.swift */,
+				E1FDC72B2D1944DD005A99ED /* ProductMapView.swift */,
+				E1FDC72F2D1948FC005A99ED /* BeantownButton.swift */,
 				E15C62F22CE1D99400A2C89B /* Assets.xcassets */,
 				E15C62F42CE1D99400A2C89B /* Preview Content */,
 			);
@@ -349,9 +359,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E168E9A12CF846FE003098FE /* Notification+Extension.swift in Sources */,
+				E1FDC72E2D1944DD005A99ED /* ProductMapView.swift in Sources */,
 				E11108942CE5CFFC0022199D /* ProfileView.swift in Sources */,
 				E15C63212CE1DBA600A2C89B /* CartView.swift in Sources */,
 				E15C62EF2CE1D99200A2C89B /* ContentView.swift in Sources */,
+				E1FDC7302D1948FC005A99ED /* BeantownButton.swift in Sources */,
 				E15C62F12CE1D99200A2C89B /* Item.swift in Sources */,
 				E168E99C2CF8447D003098FE /* Settings.swift in Sources */,
 				E15C63192CE1D9FB00A2C89B /* TabBarView.swift in Sources */,
@@ -370,9 +382,11 @@
 				E11108992CE5D18A0022199D /* ProductDetailView.swift in Sources */,
 				E168E99E2CF8447D003098FE /* Settings.swift in Sources */,
 				E15C63002CE1D99400A2C89B /* CommmerceTests.swift in Sources */,
+				E1FDC7312D1948FC005A99ED /* BeantownButton.swift in Sources */,
 				E15C632A2CE1DCE700A2C89B /* Product.swift in Sources */,
 				E15C63222CE1DBA600A2C89B /* CartView.swift in Sources */,
 				E11108952CE5CFFC0022199D /* ProfileView.swift in Sources */,
+				E1FDC72C2D1944DD005A99ED /* ProductMapView.swift in Sources */,
 				E15C631E2CE1DA7800A2C89B /* ProductsView.swift in Sources */,
 				E168E9A22CF846FE003098FE /* Notification+Extension.swift in Sources */,
 			);
@@ -391,7 +405,9 @@
 				E168E99D2CF8447D003098FE /* Settings.swift in Sources */,
 				E11108962CE5CFFC0022199D /* ProfileView.swift in Sources */,
 				E168E9A32CF846FE003098FE /* Notification+Extension.swift in Sources */,
+				E1FDC7322D1948FC005A99ED /* BeantownButton.swift in Sources */,
 				E15C632B2CE1DCE700A2C89B /* Product.swift in Sources */,
+				E1FDC72D2D1944DD005A99ED /* ProductMapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
