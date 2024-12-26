@@ -7,9 +7,14 @@
 
 import SwiftUI
 import SwiftData
+import UserNotifications
 
 @main
 struct CommmerceApp: App {
+    
+    @UIApplicationDelegateAdaptor var appDelegate: CommerceAppDelegate
+    let notificationCenter = UNUserNotificationCenter.current()
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Product.self,
@@ -28,6 +33,16 @@ struct CommmerceApp: App {
             TabBarView().task {
                 let s = Settings.shared
                 print(s.user)
+            }
+            .onAppear {
+                appDelegate.commerceApp = self
+                
+                do{
+                    try notificationCenter.requestAuthorization(options: [.alert, .badge, .sound])
+                }
+                catch{
+                    print("\(error.localizedDescription)")
+                }
             }
         }
         .modelContainer(sharedModelContainer)

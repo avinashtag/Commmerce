@@ -57,6 +57,9 @@
 		E1FDC7302D1948FC005A99ED /* BeantownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FDC72F2D1948FC005A99ED /* BeantownButton.swift */; };
 		E1FDC7312D1948FC005A99ED /* BeantownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FDC72F2D1948FC005A99ED /* BeantownButton.swift */; };
 		E1FDC7322D1948FC005A99ED /* BeantownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FDC72F2D1948FC005A99ED /* BeantownButton.swift */; };
+		E1FDC7712D1D4FAB005A99ED /* CommerceAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FDC7702D1D4FAB005A99ED /* CommerceAppDelegate.swift */; };
+		E1FDC7722D1D4FAB005A99ED /* CommerceAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FDC7702D1D4FAB005A99ED /* CommerceAppDelegate.swift */; };
+		E1FDC7732D1D4FAB005A99ED /* CommerceAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FDC7702D1D4FAB005A99ED /* CommerceAppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +105,7 @@
 		E168E9A92CF8482F003098FE /* Interview.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Interview.rtf; sourceTree = "<group>"; };
 		E1FDC72B2D1944DD005A99ED /* ProductMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductMapView.swift; sourceTree = "<group>"; };
 		E1FDC72F2D1948FC005A99ED /* BeantownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeantownButton.swift; sourceTree = "<group>"; };
+		E1FDC7702D1D4FAB005A99ED /* CommerceAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommerceAppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 				E168E9A42CF847E0003098FE /* Assignment 2.png */,
 				E15C63242CE1DCB500A2C89B /* Products.json */,
 				E15C62EC2CE1D99200A2C89B /* CommmerceApp.swift */,
+				E1FDC7702D1D4FAB005A99ED /* CommerceAppDelegate.swift */,
 				E15C62EE2CE1D99200A2C89B /* ContentView.swift */,
 				E15C63182CE1D9FB00A2C89B /* TabBarView.swift */,
 				E11108932CE5CFFC0022199D /* ProfileView.swift */,
@@ -361,6 +366,7 @@
 				E168E9A12CF846FE003098FE /* Notification+Extension.swift in Sources */,
 				E1FDC72E2D1944DD005A99ED /* ProductMapView.swift in Sources */,
 				E11108942CE5CFFC0022199D /* ProfileView.swift in Sources */,
+				E1FDC7722D1D4FAB005A99ED /* CommerceAppDelegate.swift in Sources */,
 				E15C63212CE1DBA600A2C89B /* CartView.swift in Sources */,
 				E15C62EF2CE1D99200A2C89B /* ContentView.swift in Sources */,
 				E1FDC7302D1948FC005A99ED /* BeantownButton.swift in Sources */,
@@ -389,6 +395,7 @@
 				E1FDC72C2D1944DD005A99ED /* ProductMapView.swift in Sources */,
 				E15C631E2CE1DA7800A2C89B /* ProductsView.swift in Sources */,
 				E168E9A22CF846FE003098FE /* Notification+Extension.swift in Sources */,
+				E1FDC7712D1D4FAB005A99ED /* CommerceAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +415,7 @@
 				E1FDC7322D1948FC005A99ED /* BeantownButton.swift in Sources */,
 				E15C632B2CE1DCE700A2C89B /* Product.swift in Sources */,
 				E1FDC72D2D1944DD005A99ED /* ProductMapView.swift in Sources */,
+				E1FDC7732D1D4FAB005A99ED /* CommerceAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
